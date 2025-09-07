@@ -1,4 +1,3 @@
-//Challenge 8 : Copie d'un Tableau
 
 #include <stdio.h>
 
@@ -25,14 +24,14 @@ int main()
 
     for (int i = 0; i < size; i++)
     {
-        printf("%d ," , tab[i]);
+        printf("%d " , tab[i]);
     }
 
     printf("\nyour reverced array is : ");     
 
     for (int i = 0; i < size; i++)
     {
-        printf("%d ," , c_tab[i]);
+        printf("%d " , c_tab[i]);
     }
 
     return 0;

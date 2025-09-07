@@ -3,29 +3,18 @@
 
 #include <stdio.h>
 
-int factorielle(int terme_p)
-{
-    if (terme_p == 0)
-    {
-        return 0;
-    }
-    else
-    {
-        int terme_final = 1;
-        for (int i = 0; i < terme_p; i++)
-        {
-            terme_final = i+1 ;
-        }
-        return terme_final;
-    }
+int fibo (int n){
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+
+    return fibo(n - 1) + fibo (n - 2);
 }
 
-int main()
+int main() 
 {
-    int terme;
-    printf(" terme de la suite de Fibonacci : ");
-    scanf("%d", &terme);
+    int n = 5;
 
-    printf("le term numero %d dans la suite de Fibonacci est : %d", terme, factorielle(terme));
-    return 0;
+    printf("%d", fibo(n));
+
+
 }
